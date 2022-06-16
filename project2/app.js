@@ -15,6 +15,23 @@ let data = [
         name:'Ashley',
         age:'25'
     },
+    {
+        name:'Roger',
+        age:'50'
+    },
+    {
+        name:'Lila',
+        age:'26'
+    },
+    {
+        name:'Bob',
+        age:'20'
+    },
+    {
+        name:'Ashley',
+        age:'25'
+    },
+
 
 ];
 
