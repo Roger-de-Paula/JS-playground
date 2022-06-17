@@ -14,14 +14,20 @@ body{
     height: 100vh;
 }
 
-#info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+#circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background: salmon;
+    border-radius: 100px;
+    font-size: 1.5rem;
+    color: aliceblue;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
 }
 
-#info div {
-    padding: 3rem;
-    background:rgb(90, 8, 71);
-    margin: 0.5rem;
-    border-radius: 2.0rem;
+.hover {
+    transform: scale(2)
 }
