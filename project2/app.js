@@ -16,6 +16,7 @@ let data = [
         age:'25'
     },
     {
+
         name:'Roger',
         age:'50'
     },
@@ -26,12 +27,12 @@ let data = [
     {
         name:'Bob',
         age:'20'
+
     },
     {
         name:'Ashley',
         age:'25'
     },
-
 
 ];
 
@@ -42,3 +43,4 @@ let details = data.map(function(item) {
 });
 
 info.innerHTML = details.join('\n');
+
