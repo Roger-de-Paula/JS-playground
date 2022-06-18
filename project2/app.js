@@ -44,3 +44,14 @@ let details = data.map(function(item) {
 
 info.innerHTML = details.join('\n');
 
+info.addEventListener('mouseenter', () => {
+    if(!info.classList.contains('hover')) {
+        info.classList.add('hover');
+    }
+});
+
+info.addEventListener('mouseleave', () => {
+    if(info.classList.contains('hover')) {
+        info.classList.remove('hover');
+    }
+});
