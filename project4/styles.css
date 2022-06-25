@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#textInput {
+    position: absolute;
+    top: 50px;
+    border-radius: 5vh;
+    width: 60vh;
+    height: 7vh;
+}
+
+#add {
+    position: absolute;
+    top: 100px;
+    border-radius: 5vh;
+    width: 40vh;
+    height: 5vh;
+}
+#toDo {
+    max-height: 50vh;
+    overflow: scroll;
+
+}
+
+.to_do  {
+    padding: 3rem;
+    background:rgb(218, 105, 192);
+    margin: 0.5rem;
+    border-radius: 10px;
+    color:black;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    width: 60vh;
+    height: 7vh;
+}
+
+.done {
+    text-decoration-line: line-through;
+  }
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    width: 1rem;
+    height: 1rem;
+}
+
+input[type="checkbox"]::before {
+      content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+.deleteButton {
+    background-color: rgb(239, 53, 53);
+    width: 3rem;
+    height: 2rem;
+    box-shadow: rgb(79, 76, 78);
+    position: relative;
+    left: 9rem;
+    bottom: 2rem;
+
+}
+
